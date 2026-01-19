@@ -14,6 +14,10 @@ See also: [iiif-dl](https://github.com/ryanfb/iiif-dl), [dezoomify](https://gith
  * [Bundler](http://bundler.io/)
  * [ImageMagick](http://www.imagemagick.org/)
  
+### Environment
+
+- `THREADS` controls parallel tile downloads (default: 4). Increase for faster networks/CPUs, decrease if the server throttles requests.
+
 ## Usage
 
     bundle exec ./dzi-dl.rb 'http://example.com/dzi-viewer/viewer.ashx?zoom=image.xml'
